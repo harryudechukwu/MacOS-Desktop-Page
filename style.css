@@ -1,0 +1,162 @@
+:root {
+    --font: 'Fira Sans', sans-serif;
+    --textcolor:  rgba(255, 255, 255, 0.897);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+body {
+    background-image: url(img/bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.fixedTop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3vh;
+    background-color: rgba(44, 43, 43, 0.342);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    backdrop-filter: blur(10px);
+}
+.leftText {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    left: 65px;
+}
+h4 {
+    font-family: var(--font);
+    color: var(--textcolor);
+    font-size: 900;
+    font-size: 14px;
+}
+h5 {
+    color: var(--textcolor);
+    font-size: 0.9rem;
+    font-family: var(--font);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-left: 17px;
+}
+.rightIcons {
+    position: fixed;
+    right: 10px;
+    display: flex;
+}
+.rightIcons > h5 {
+    letter-spacing: 0.05rem;
+    position: relative;
+    top: 5px;
+}
+.rightIcons > .siri {
+    width: 20px;
+    height: 15px;
+    position: relative;
+    top: 5px;
+}
+.bx-search {
+    color: var(--textcolor);
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 5px;
+    bottom: 0.5px;
+}
+.bx-wifi-2 {
+    color: var(--textcolor);
+    display: flex;
+    font-size: 23px;
+    align-items: center;
+    position: relative;
+    right: 15px;
+    bottom: 3px;
+}
+.bx-user-circle {
+    color: var(--textcolor);
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    position: relative;
+    right: 25px;
+    bottom: 0px;
+}
+.uil-battery-bolt {
+    color: var(--textcolor);
+    display: flex;
+    font-size: 28px;
+    align-items: center;
+    position: relative;
+    right: 40px;
+    bottom: -0.6px;
+}
+.uil-clock-eight {
+    color: var(--textcolor);
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    position: relative;
+    right: 55px;
+    bottom: 0.9px;
+}
+.uil-airplay {
+    color: var(--textcolor);
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    position: relative;
+    right: 70px;
+    bottom: -0.6px;
+}
+.fixedBottom {
+    position: fixed;
+    bottom: 2%;
+    left: 5%;
+    width: 90%;
+    height: 7vh;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.295);
+    display: flex;
+    z-index: 22;
+    backdrop-filter: blur(40px); 
+}
+.imgContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    left: 6px;
+}
+img {
+    width: 3%;
+    transition: 0.5s ease-in-out;
+    margin-left: 5px;
+}
+img:hover {
+    margin-top: -20px;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.bxl-apple {
+    color: white;
+    font-size: 25px;
+    position: fixed;
+    left: 15px;
+}
+img.apps {
+    width: 2.5%;
+    margin: 7px;
+}
+img.apps:hover {
+    margin-top: -10px;
+    transform: scale(1.3);
+    cursor: pointer;
+}
